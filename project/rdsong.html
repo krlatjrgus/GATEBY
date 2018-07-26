@@ -1,0 +1,54 @@
+<html>
+        <style type="text/css">
+            h1{text-align: center;
+            font-family: 궁서;
+            background-color: aliceblue;
+             }
+             body{
+
+                background-color:white;
+             }
+             li{
+                display:inline;
+                border: 2px solid black;
+                background-color:white;
+                color:purple;
+                font-family: 굴림;
+                font-size: 15pt;
+             }
+
+        </style>
+        
+
+    <head>
+            <h1>우연으로 굴러가는 음악 방</h1>
+            
+    </head>
+    <body>
+        <script>
+            var a = Math.floor(Math.random() * 1) + 1;   
+            var b = a+'.ogg';
+            document.querySelector("#song").src=b;
+            </script>
+            <input type="button" id="play" value="shuffle" onclick="
+            var a = Math.floor(Math.random() * 4) + 1;   
+            var b = a+'.ogg'; 
+            console.log(a); 
+            console.log(b);
+            var c=1; 
+            document.querySelector('#song').src=b;"
+            >
+            <script>
+                    var a=Math.floor(Math.random() * 4) + 1;
+                    console.log(a);
+                    document.write("<div style='margin: 0 auto; display: table;'> <audio id='song' src="+b+" autoplay controls loop='infinte'></audio></div>");          
+                    </script>
+            <h3>HOME</h3>
+            <ol>
+                <li><a href="rdgame.html">게임</a></li>
+                <li><a href="rdsong.html">음악</a></li>
+            </ol>
+            <div style='margin: 0 auto; display: table;'><embed id="sandboxembed" src="https://orig00.deviantart.net/b995/f/2009/046/9/b/bee_and_music_by_yo_3.swf" allowscriptaccess="never" width="400" height="500" play="true" loop="true" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+            </div>
+        </body>
+</html>

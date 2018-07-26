@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Random</title>
+            <link rel="stylesheet" href="index.css" >
+
+            <style>
+                @import url(https://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+                @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+                h1{
+                    font-family: 'Nanum Pen Script', cursive;
+                }
+            
+                header, p, a, h4{
+                    font-family: 'Do Hyeon', sans-serif;
+                }
+            </style>
+        </head> 
+
+        <body>
+            <!-- <script>
+                alert('Welcome to our Web Site...!');
+                </script> -->
+            <h1><a href="index.html" style="text-decoration:none"><b>RANDOM</b></a></h1>
+                
+            <p><p><header>우리의 웹사이트는 당신이 원하는 랜덤이 갖추어져 있습니다<p>
+                여러가지 랜덤 서비스를 체험해 보세요</header><p></p>
+        <br><br>
+            <div id="contents">
+                <div id="category">
+                    <ul style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr">
+                        <li onclick="
+                            document.querySelector('#site').style.display = 'block';
+                            document.querySelector('#music').style.display = 'none';
+                            document.querySelector('#draw').style.display = 'none';
+                            document.querySelector('#game').style.display = 'none';
+                            document.querySelector('#chat').style.display = 'none';
+                            document.querySelector('#intro').style.display = 'none';
+
+                            document.querySelector('#siteBtn').style.backgroundColor = 'white';
+                            document.querySelector('#siteBtn').style.color = 'black';
+
+                            
+                            document.querySelector('#musicBtn').style.backgroundColor = 'black';
+                            document.querySelector('#musicBtn').style.color = 'white';
+                            
+                            document.querySelector('#drawBtn').style.backgroundColor = 'black';
+                            document.querySelector('#drawBtn').style.color = 'white';
+
+                            document.querySelector('#chatBtn').style.backgroundColor = 'black';
+                            document.querySelector('#chatBtn').style.color = 'white';
+                            
+                            document.querySelector('#gameBtn').style.backgroundColor = 'black';
+                            document.querySelector('#gameBtn').style.color = 'white';
+                        ">
+                        <a id="siteBtn" class="menuLink">랜덤 사이트</a></li>
+                        
+                        <li onclick="
+                            document.querySelector('#site').style.display = 'none';
+                            document.querySelector('#music').style.display = 'block';
+                            document.querySelector('#draw').style.display = 'none';
+                            document.querySelector('#game').style.display = 'none';
+                            document.querySelector('#chat').style.display = 'none';
+                            document.querySelector('#intro').style.display = 'none';
+                            
+                            document.querySelector('#musicBtn').style.backgroundColor = 'white';
+                            document.querySelector('#musicBtn').style.color = 'black';
+
+                            document.querySelector('#siteBtn').style.backgroundColor = 'black';
+                            document.querySelector('#siteBtn').style.color = 'white';
+                            
+                            document.querySelector('#drawBtn').style.backgroundColor = 'black';
+                            document.querySelector('#drawBtn').style.color = 'white';
+
+                            document.querySelector('#chatBtn').style.backgroundColor = 'black';
+                            document.querySelector('#chatBtn').style.color = 'white';
+                            
+                            document.querySelector('#gameBtn').style.backgroundColor = 'black';
+                            document.querySelector('#gameBtn').style.color = 'white';
+                            
+                        ">
+                        <a id="musicBtn" class ="menuLink">랜덤 음악</a></li>
+                        
+                        <li onclick="
+                            document.querySelector('#site').style.display = 'none';
+                            document.querySelector('#music').style.display = 'none';
+                            document.querySelector('#draw').style.display = 'block';
+                            document.querySelector('#game').style.display = 'none';
+                            document.querySelector('#chat').style.display = 'none';
+                            document.querySelector('#intro').style.display = 'none';
+
+                            document.querySelector('#drawBtn').style.backgroundColor = 'white';
+                            document.querySelector('#drawBtn').style.color = 'black';
+
+                            
+                            document.querySelector('#siteBtn').style.backgroundColor = 'black';
+                            document.querySelector('#siteBtn').style.color = 'white';
+
+                            document.querySelector('#musicBtn').style.backgroundColor = 'black';
+                            document.querySelector('#musicBtn').style.color = 'white';
+
+                            document.querySelector('#chatBtn').style.backgroundColor = 'black';
+                            document.querySelector('#chatBtn').style.color = 'white';
+                            
+                            document.querySelector('#gameBtn').style.backgroundColor = 'black';
+                            document.querySelector('#gameBtn').style.color = 'white';
+                        ">
+                        <a id="drawBtn"class ="menuLink">랜덤 음식</a></li>                    
+                        
+                        <li onclick="
+                            document.querySelector('#site').style.display = 'none';
+                            document.querySelector('#music').style.display = 'none';
+                            document.querySelector('#draw').style.display = 'none';
+                            document.querySelector('#chat').style.display = 'block';
+                            document.querySelector('#game').style.display = 'none';
+                            document.querySelector('#intro').style.display = 'none';
+
+                            document.querySelector('#chatBtn').style.backgroundColor = 'white';
+                            document.querySelector('#chatBtn').style.color = 'black';
+
+
+                            document.querySelector('#siteBtn').style.backgroundColor = 'black';
+                            document.querySelector('#siteBtn').style.color = 'white';
+
+                            document.querySelector('#musicBtn').style.backgroundColor = 'black';
+                            document.querySelector('#musicBtn').style.color = 'white';
+
+                            document.querySelector('#drawBtn').style.backgroundColor = 'black';
+                            document.querySelector('#drawBtn').style.color = 'white';
+                            
+                            document.querySelector('#gameBtn').style.backgroundColor = 'black';
+                            document.querySelector('#gameBtn').style.color = 'white';
+
+                            
+                        ">
+                        <a id="chatBtn"class ="menuLink">랜덤 영상</a></li>
+                        
+                        <li onclick="
+                            document.querySelector('#site').style.display = 'none';
+                            document.querySelector('#music').style.display = 'none';
+                            document.querySelector('#draw').style.display = 'none';
+                            document.querySelector('#chat').style.display = 'none';
+                            document.querySelector('#game').style.display = 'block';
+                            document.querySelector('#intro').style.display = 'none';
+
+                            document.querySelector('#gameBtn').style.backgroundColor = 'white';
+                            document.querySelector('#gameBtn').style.color = 'black';
+
+
+                            document.querySelector('#siteBtn').style.backgroundColor = 'black';
+                            document.querySelector('#siteBtn').style.color = 'white';
+
+                            document.querySelector('#musicBtn').style.backgroundColor = 'black';
+                            document.querySelector('#musicBtn').style.color = 'white';
+
+                            document.querySelector('#chatBtn').style.backgroundColor = 'black';
+                            document.querySelector('#chatBtn').style.color = 'white';
+                            
+                            document.querySelector('#drawBtn').style.backgroundColor = 'black';
+                            document.querySelector('#drawBtn').style.color = 'white';
+                        ">
+                        <a id="gameBtn"class ="menuLink">랜덤 게임</a></li>
+                    </ul>
+                </div>
+                
+                <div id="intro">
+                    <p><br><br>랜덤 사이트의 소개<p><br><br>
+                    1. 랜덤 사이트는...<p><br>
+                    2. 랜덤 음악은...<p><br>
+                    3. 랜덤 뽑기는...<p><br>
+                    4. 랜덤 채팅은...<p><br>
+                    5. 랜덤 게임은...<p><br>
+                    </p>
+                    </div>
+                
+                <div id="site">
+                    <!-- <iframe src="google.html" scrolling="no" width="1280" height="720"></iframe> -->
+                    <!--  랜덤웹 -->
+                    <a href="사이트/google.html"><img src="web-site-move.png" width="200" height="200" alt="랜덤 웹 페이지로 이동하기" style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; display: block;"/></a>
+                    <p><h3 style="text-align: center">랜덤 사이트 이동하기</h3><br><br>
+                </div>
+                
+                <div id="music">
+                    <!--  랜덤음악 -->
+                    <a href="rdsong.html">
+                        <img src="web-site-move.png" width="200" 
+                            height="200" alt="랜덤 음악 페이지로 이동하기" 
+                            style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; display: block;"/></a>
+                    <p><h3 style="text-align: center">랜덤 음악 이동하기</h3><br><br>
+                </div>
+                
+                <div id="draw">
+                    <!--  랜덤뽑기 -->
+                    <a href="RANDOM/rdfood.html">
+                            <img src="web-site-move.png" width="200" 
+                                height="200" alt="랜덤 음식 페이지로 이동하기" 
+                                style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; display: block;"/></a>
+                        <p><h3 style="text-align: center">랜덤 음식 이동하기</h3><br><br>
+                
+                </div>
+                
+                <div id="game">
+                    <!--  랜덤게임 -->
+                    <a href="rdgame.html"><img src="web-site-move.png" width="200" height="200" alt="랜덤 게임 페이지로 이동하기" style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; display: block;"/></a>
+                    <p><h3 style="text-align: center">랜덤 게임 이동하기</h3><br><br>
+                </div>
+                
+                <div id="chat">
+                    <!--  랜덤영상 -->
+                    <a href="rdmovie.html">
+                            <img src="web-site-move.png" width="200" 
+                                height="200" alt="랜덤 영상 페이지로 이동하기" 
+                                style="margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px; display: block;"/></a>
+                        <p><h3 style="text-align: center">랜덤 영상 이동하기</h3><br><br>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div id="footer">
+                    <h2 id="madeby">Made by Team.Random</h2><img src="dice.png" width="80px" height="80px" >
+            </div><br>
+            <h4>김도현, 김동희, 김석현, 김창아, 오상윤</h4>
+            <br><br>
+        </body>
+    </html>

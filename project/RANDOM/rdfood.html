@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Food_RANDOM</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        .selected{
+            border:5px solid red;
+        }
+
+        #김밥{
+            width:200px;
+            text-align:center;
+            margin:0 auto;
+        }
+        #김밥 img{
+            display:block;
+            width:100%
+        }
+
+        #국밥{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #국밥 img{
+            display:block;
+            width:100%
+        }
+
+        #국수{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #국수 img{
+            display:block;
+            width:100%
+        }
+
+        #덮밥{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #덮밥 img{
+            display:block;
+            width:100%
+        }
+
+        #떡볶이{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #떡볶이 img{
+            display:block;
+            width:100%
+        }
+
+        #만두{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #만두 img{
+            display:block;
+            width:100%
+        }
+
+        #비빔밥{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #비빔밥 img{
+            display:block;
+            width:100%
+        }
+
+        #생선구이{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #생선구이 img{
+            display:block;
+            width:100%
+        }
+
+        #수육{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #수육 img{
+            display:block;
+            width:100%
+        }
+
+        #스파게티{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #스파게티 img{
+            display:block;
+            width:100%
+        }
+
+        #육류구이{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #육류구이 img{
+            display:block;
+            width:100%
+        }
+
+        #육회{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #육회 img{
+            display:block;
+            width:100%
+        }
+
+        #잡곡밥정식{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #잡곡밥정식 img{
+            display:block;
+            width:100%
+        }
+
+        #짜장면{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #짜장면 img{
+            display:block;
+            width:100%
+        }
+
+        #짬뽕{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #짬뽕 img{
+            display:block;
+            width:100%
+        }
+
+        #치킨{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #치킨 img{
+            display:block;
+            width:100%
+        }
+
+        #피자{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #피자 img{
+            display:block;
+            width:100%
+        }
+
+        #햄버거{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #햄버거 img{
+            display:block;
+            width:100%
+        }
+
+        #회{
+            width:200px;
+            margin:0 auto;
+            text-align:center;
+        }
+        #회 img{
+            display:block;
+            width:100%
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var foods = [];
+            function uniq(a) {                    /*배열의 중복된 요소를 제거하는 함수 (arrayunique)*/
+            var seen = {};
+            return a.filter(function(item) {
+                return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+                });
+            }
+            
+            function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));       /*배열을 섞는 함수(shuffle)*/
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+                }
+            return array;
+            }
+        </script>
+        <div id = "all">
+        <div id = "김밥">
+            <img id="김밥" src="음식/김밥.PNG" width="200">
+            <input type="button" value="선택" onclick="document.querySelector('#김밥').classList.add('selected'); 
+            foods.push('김밥');"></div>
+        
+        <div id="국밥">
+            <img id="국밥" src="음식/국밥.JPG" width="200">
+            <input type="button" value="선택" onclick="document.querySelector('#국밥').classList.add('selected'); 
+            foods.push('국밥');"></div>
+        
+        
+
+        <div id="국수">
+                <img id="국수" src="음식/국수.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#국수').classList.add('selected'); 
+                foods.push('국수');">
+        </div>
+        
+        <div id="덮밥">
+                <img id="덮밥" src="음식/덮밥.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#덮밥').classList.add('selected'); 
+                foods.push('덮밥');">
+        </div>
+        
+        <div id="떡볶이">
+                <img id="떡볶이" src="음식/떡볶이.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#떡볶이').classList.add('selected'); 
+                foods.push('떡볶이');">
+        </div>
+        
+        <div id="만두">
+                <img id="만두" src="음식/만두.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#만두').classList.add('selected'); 
+                foods.push('만두');">
+        </div>
+        
+        <div id="비빔밥">
+                <img id="비빔밥" src="음식/비빔밥.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#비빔밥').classList.add('selected'); 
+                foods.push('비빔밥');">
+        </div>
+        
+        <div id="생선구이">
+                <img id="생선구이" src="음식/생선구이.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#생선구이').classList.add('selected'); 
+                foods.push('생선구이');">
+        </div>
+        
+        <div id="수육">
+                <img id="수육" src="음식/수육.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#수육').classList.add('selected'); 
+                foods.push('수육');">
+        </div>
+        
+        <div id="스파게티">
+                <img id="스파게티" src="음식/스파게티.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#스파게티').classList.add('selected'); 
+                foods.push('스파게티');">
+        </div>
+        
+        <div id="육류구이">
+                <img id="육류구이" src="음식/육류구이.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#육류구이').classList.add('selected'); 
+                foods.push('육류구이');">
+        </div>
+        
+        <div id="육회">
+                <img id="육회" src="음식/육회.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#육회').classList.add('selected'); 
+                foods.push('육회');">
+        </div>
+        
+        <div id="잡곡밥정식">
+                <img id="잡곡밥정식" src="음식/잡곡밥정식.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#잡곡밥정식').classList.add('selected'); 
+                foods.push('잡곡밥정식');">
+        </div>
+
+        
+        <div id="짜장면">
+                <img id="짜장면" src="음식/짜장면.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#짜장면').classList.add('selected'); 
+                foods.push('짜장면');">
+        </div>
+        
+        <div id="짬뽕">
+                <img id="짬뽕" src="음식/짬뽕.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#짬뽕').classList.add('selected'); 
+                foods.push('짬뽕');">
+        </div>
+
+        
+        <div id="치킨">
+                <img id="치킨" src="음식/치킨.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#치킨').classList.add('selected'); 
+                foods.push('치킨');">
+        </div>
+        
+        <div id="피자">
+                <img id="피자" src="음식/피자.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#피자').classList.add('selected'); 
+                foods.push('피자');">
+        </div>
+        
+        <div id="햄버거">
+                <img id="햄버거" src="음식/햄버거.JPG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#햄버거').classList.add('selected'); 
+                foods.push('햄버거');">
+        </div>
+
+        
+        <div id="회">
+                <img id="회" src="음식/회.PNG" width="200">
+                <input type="button" value="선택" onclick="document.querySelector('#회').classList.add('selected'); 
+                foods.push('회');">
+        </div>
+    </div>
+    <div id="선택">
+        <input type="button" id="선택" style="WIDTH: 200pt; HEIGHT: 120pt" value="오늘먹을음식은?" onclick="
+            shuffleArray(foods);
+            alert('당신이 먹을 음식은 '+foods[0]+' 입니다!');
+            "
+        >
+    </div>
+    </body>
+</html>

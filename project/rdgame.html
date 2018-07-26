@@ -1,0 +1,35 @@
+<html>
+        <style type="text/css">
+            h1{text-align: center;
+            font-family: 궁서;
+            background-color: aliceblue;
+             }
+             body{
+                text-align: center;
+                background-image: url('');
+             }
+            
+        </style>
+    <head>
+            <h1>겜은 뭐다? 즐~겜이다.</h1>
+    </head>
+    <body>
+        <script>
+            function shuffle(){
+                var a = Math.floor(Math.random() * 2) + 1;   
+                var b = a+'.html'; 
+                console.log(a); 
+                console.log(b);
+                document.querySelector('#msg').innerHTML = "<a href="+b+" target='blank'><h2>어떤 게임일지 확인해 보세요!!</h2>";
+            }
+            var a = Math.floor(Math.random() * 1) + 1;   
+            var b = a+'.swf';
+            console.log(document.querySelector("<a href=b></a><h2>어떤 게임일지 확인해 보세요!!</h2>"));
+            </script>
+            <input type="button" id="html" value="shuffle" onclick="shuffle()"></a>
+            <h2 id="msg">↑↑☆★어서 누르고 게임하러 가세요★☆!!</h2>
+           
+            
+
+    </body>
+</html>
